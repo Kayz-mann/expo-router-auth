@@ -1,0 +1,36 @@
+{
+  "cli": {
+    "version": ">= 9.0.6"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "development-simulator": {
+      "developmentClient": true,
+      "android": {
+        "env": {
+          "DOTENV_CONFIG_PATH": ".env"
+        }
+      },
+      "ios": {
+        "env": {
+          "DOTENV_CONFIG_PATH": ".env"
+        },
+        "cache": {
+          "disabled": true
+        },
+        "simulator": true,
+        "resourceClass": "m-medium"
+      }
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}

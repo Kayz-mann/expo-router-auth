@@ -34,7 +34,7 @@ export function AuthProvider({ children }: React.PropsWithChildren) {
           setSession("user", "Kay");
         },
         signOut: () => {
-          setUser(undefined);
+          setUser("");
           deleteSession("user");
         },
       }}

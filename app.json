@@ -14,7 +14,8 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.routerTodos"
+      "bundleIdentifier": "com.routerTodos",
+      "simulator": true
     },
     "android": {
       "adaptiveIcon": {
@@ -33,6 +34,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "efaf703b-4a85-4a2d-8449-a7d4e0b44225"
+      }
     }
   }
 }

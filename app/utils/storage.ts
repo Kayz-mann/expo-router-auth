@@ -14,5 +14,5 @@ export const getSession = (key: string) => {
 };
 
 export const deleteSession = (key: string) => {
-  storage.delete(key);
+  storage.delete(`${key}`);
 };
